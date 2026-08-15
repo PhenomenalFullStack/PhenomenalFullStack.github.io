@@ -232,7 +232,17 @@
                     </div>
                 </div>
 
-
+                <!-- Portfolio Item 11-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/qmix.png" alt="..." />
+                    </div>
+                </div>
 
 
 
@@ -985,6 +995,64 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+    <!-- Portfolio Modal 11 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" aria-labelledby="portfolioModal11"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Autonomous Navigation System for Autonomous Vehicles: Multi-Agent Path Finding and Deep Reinforcement Learning
+                                </h2>
+
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                
+                                <!-- Portfolio Modal - Video-->
+                                <div class="iframe-container">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/#"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="padding-top: 2em;">
+                                    This project investigates the problem of coordinating multiple autonomous vehicles (AVs) at an unsignalised intersection, where each vehicle has a limited field of view (3x3 grid) and is subject to real-world execution disturbances (braking delay, sensor noise, and communication latency).
+                                    Our research is structured into two distinct approaches, created in separate folders:
+                                    The Baseline - Uses machine learning libraries (PyTorch) to implement standard CBS and QMIX. Its purpose is to demonstrate the failure modes of existing methods cbs and qmix under realistic disturbances and increasing vehicle density. This proves the existence of the research gap.
+                                    The Project - Implements the same algorithms from scratch with no external ML libraries. It builds a hybrid system that combines CBS, QMIX, a Deviation Trigger, and Priority-Aware CBS replanning. This is our proposed solution that overcomes the failures identified in the baseline.
+                                    The two approaches remain completely separate to ensure that the baseline provides an independent verification of the problem, while the project demonstrates a novel, library-free solution suitable for real-world deployment.
+                                </p>        
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
