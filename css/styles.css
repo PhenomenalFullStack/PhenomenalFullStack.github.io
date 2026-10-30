@@ -11592,3 +11592,9 @@ section:not(.hero):hover {
 .skills-list > div:hover {
   box-shadow: 0 10px 48px #20408025;
 }
+
+
+.contact-box:hover {
+  box-shadow: 0 10px 30px rgba(32, 64, 128, 0.35);
+  transform: translateY(-2px);
+}
