@@ -173,6 +173,17 @@
                             style="width: 100%; height: auto; display: block;" />
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal208">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/recsys.png" alt="..."
+                            style="width: 100%; height: auto; display: block;" />
+                    </div>
+                </div>
                 <!-- Portfolio Item 10-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
@@ -1350,7 +1361,64 @@
         </div>
     </div>
 
+<!-- Portfolio Modal 208 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal208" tabindex="-1" aria-labelledby="portfolioModal11"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
 
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    RecID - Generative Recommender with Semantic ID and a Transformers.
+                                </h2>
+
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+
+                                <div class="iframe-container">
+                                    <img src="assets/img/portfolio/recsys.png"
+                                        alt="Time Management System - Portfolio Screenshot"
+                                        style="width: 100%; height: auto; display: block; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                </div>
+
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4" style="padding-top: 2em;">
+                                    Generative Recommender with Semantic IDs. <br>
+
+                                    I built a generative recommender system on the H&M fashion dataset (about 2.3M purchases from 187K shoppers). 
+                                    Product text is compressed into short discrete semantic IDs with an RQ-VAE. 
+                                    A small decoder-only transformer (3.4M parameters) then predicts a shopper's next item by generating its ID token by token, using beam search constrained to real products. 
+                                    In leave-one-out testing on 20,000 users, it reached a 14.1% Hit Rate@10, about 44% higher than a strong sequential baseline (9.8%). 
+                                    It ties that baseline at the very top of the ranking and wins in the lower part of the top-10/top-20 lists. 
+                                    I also built a working online shop with 10 simulated users. 
+                                    It records their activity (views, bag, purchases) and updates a Recommended section live from the model.
+                                    <br>
+                                    Tech: Python, PyTorch, FastAPI, SQLite, JavaScript
+                                    <br><br>
+                                    <div style="color: red;">STILL IN PROGRESS: Video Demo coming soon.</div>
+                                    <br><br>
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
